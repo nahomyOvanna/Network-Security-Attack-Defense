@@ -25,37 +25,37 @@ Simulate a network attack and defense by performing an Nmap scan, configuring a 
 
 ### 1. **Find the IP Address of Ubuntu** 🖥️🔍
    
-On the Ubuntu VM, open the terminal and run:  **ip a**
+- On the Ubuntu VM, open the terminal and run:  **ip a**
 
 ![1](https://github.com/user-attachments/assets/934f7a78-bd75-4bf6-a454-f53476dc427a)
 
-Note the IP address (e.g., 10.0.2.15) from the inet field.
+- Note the IP address (e.g., 10.0.2.15) from the inet field.
 
 
 
 ### 2. **Find the IP Address of Kali Linux** 🖥️🔍
 
-On the Kali Linux VM, open the terminal and run:   **ip a**
+- On the Kali Linux VM, open the terminal and run:   **ip a**
 
 ![2](https://github.com/user-attachments/assets/67f26443-41f6-4d7a-943a-74f33293b0a8)
 
-Note the IP address (e.g., 10.0.2.6) from the inet field.
+- Note the IP address (e.g., 10.0.2.6) from the inet field.
 
 
 
 ### 3.  **Launch an Nmap Scan from Kali Linux** 🚨🛠️
 
-On Kali Linux, open the terminal and run:   **nmap -A 10.0.2.15**
+- On Kali Linux, open the terminal and run:   **nmap -A 10.0.2.15**
 
 ![3](https://github.com/user-attachments/assets/2ced2a78-8efb-4103-8eda-ae2916e39ccb)
 
-This will scan the Ubuntu machine and generate a report.
+- This will scan the Ubuntu machine and generate a report.
 
 
 
 ### 4. **Set Up a Firewall on Ubuntu** 🔥🛡️
 
-To block unauthorized access, set up a firewall on Ubuntu:
+- To block unauthorized access, set up a firewall on Ubuntu:
 
  a. **sudo apt install ufw**
 
@@ -77,29 +77,29 @@ To block unauthorized access, set up a firewall on Ubuntu:
 
    ![4 5](https://github.com/user-attachments/assets/1cbc3f74-eee8-434a-a00f-da3beb719045)
 
-This will activate the firewall and allow connections only from Kali Linux.
+- This will activate the firewall and allow connections only from Kali Linux.
 
 
 
 ### 5. **Install Wireshark on Ubuntu** 💻🔧
 
-To capture network traffic, install Wireshark on Ubuntu:
+- To capture network traffic, install Wireshark on Ubuntu:
 
   **sudo apt install wireshark**
 
 ![5](https://github.com/user-attachments/assets/9b66aea3-e0ba-43d1-b4c9-488d6c3a1f31)
 
-Follow the prompts to complete installation.  
+- Follow the prompts to complete installation.  
 
 
 
 ### 6. **Capture Network Traffic with Wireshark** 🐟🔎
 
-Open Wireshark on Ubuntu by running:  **sudo wireshark**
+- Open Wireshark on Ubuntu by running:  **sudo wireshark**
 
 ![6](https://github.com/user-attachments/assets/4ccb49e4-9e64-4d83-9ae4-0ced3ebc6b1b)
 
-Start capturing network traffic.
+- Start capturing network traffic.
 
 ![6 1](https://github.com/user-attachments/assets/fb9b6086-ebdd-4cc1-9c1b-a3ddce741f5f)
 
@@ -109,7 +109,7 @@ Start capturing network traffic.
 
 ### 7. **Re-run the Nmap Scan from Kali Linux** 🔄🧑‍💻🔍
 
-On Kali Linux, run the Nmap scan again: **nmap -A 10.0.2.15**
+- On Kali Linux, run the Nmap scan again: **nmap -A 10.0.2.15**
 
 ![7](https://github.com/user-attachments/assets/e8dcac53-685a-4677-9e2f-8373d2880ca4)
 
@@ -117,7 +117,7 @@ On Kali Linux, run the Nmap scan again: **nmap -A 10.0.2.15**
 
 ![7 2](https://github.com/user-attachments/assets/c1ae558c-fb63-4f05-8e71-1e4aef9911db)
 
-Capture the traffic in Wireshark on Ubuntu.
+- Capture the traffic in Wireshark on Ubuntu.
 
 
 
